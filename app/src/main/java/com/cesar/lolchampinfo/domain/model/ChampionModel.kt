@@ -1,0 +1,28 @@
+package com.cesar.lolchampinfo.domain.model
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+class ChampionModel(
+    @SerialName("id")
+    val id: String? = "",
+    @SerialName("image")
+    val image: ImageModel? = ImageModel(),
+    @SerialName("key")
+    val key: String? = "",
+    @SerialName("lore")
+    val lore: String? = "",
+    @SerialName("blurb")
+    val blurb: String? = "",
+    @SerialName("name")
+    val name: String? = "",
+    @SerialName("passive")
+    val passive: PassiveModel? = PassiveModel(),
+    @SerialName("spells")
+    val spells: List<SpellModel> = emptyList(),
+    @SerialName("tags")
+    val tags: List<String> = emptyList(),
+    @SerialName("title")
+    val title: String? = ""
+)
