@@ -1,5 +1,7 @@
 package com.cesar.lolchampinfo.presentation.screen.champion_details.components
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ListItem
@@ -21,11 +23,21 @@ fun ChampionPassive(
     passive: PassiveModel,
     modifier: Modifier = Modifier
 ) {
-    Text(
-        text = "Pasiva",
-        style = MaterialTheme.typography.titleLarge,
-        fontWeight = FontWeight.Bold
-    )
+
+    Box(
+        modifier = Modifier.padding(start = 16.dp)
+    ) {
+
+
+        Text(
+            text = "Pasiva",
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
+
+            )
+
+    }
+
 
     ListItem(
         headlineContent = {
