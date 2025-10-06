@@ -44,8 +44,8 @@ class MainActivity : ComponentActivity() {
                         ChampionListScreen(
                             state = state,
                             onValueChange = viewModel::onSearchTextChange,
-                            navigate = { name ->
-                                navController.navigate(ChampionDetails(name))
+                            navigate = { id ->
+                                navController.navigate(ChampionDetails(id))
 
                             }
                         )

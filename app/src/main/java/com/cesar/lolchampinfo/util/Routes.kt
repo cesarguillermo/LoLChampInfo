@@ -6,4 +6,4 @@ import kotlinx.serialization.Serializable
 data object  ChampionList
 
 @Serializable
-data class ChampionDetails(val name : String)
+data class ChampionDetails(val id : String)

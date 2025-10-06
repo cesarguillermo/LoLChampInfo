@@ -25,7 +25,7 @@ class ChampionDetailsViewModel @Inject constructor(
         val args = savedStateHandle.toRoute<ChampionDetails>()
 
         viewModelScope.launch {
-            apiRepository.getChampionByName(args.name)
+            apiRepository.getChampionByName(args.id)
                 .onSuccess {
                     champion.value = data.champion.values.firstOrNull()
                 }

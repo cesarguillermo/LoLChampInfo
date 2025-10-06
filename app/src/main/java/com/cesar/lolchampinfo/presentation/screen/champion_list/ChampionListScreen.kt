@@ -66,7 +66,7 @@ fun ChampionListScreen(
                     ChampionCard(champion = champion,
                         modifier = Modifier.animateItem()
                             .clickable {
-                               champion.name?.let(navigate)
+                               champion.id?.let(navigate)
                             }
                     )
                 }
